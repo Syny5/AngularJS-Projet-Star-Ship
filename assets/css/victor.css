@@ -1,17 +1,21 @@
-/* Dropdown Button */
+/* Bouton catégorie */
 .dropbtn {
   color: white;
   font-size: 16px;
   border: none;
+  background-color: #343a40;
+}
+.dropbtn:hover {
+  color: grey;
 }
 
-/* The container <div> - needed to position the dropdown content */
+/* Positionnement du dropdown catégorie */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
+/* Contenu du dropdown */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -21,7 +25,7 @@
   z-index: 1;
 }
 
-/* Links inside the dropdown */
+/* Liens dans le dropdown */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -29,11 +33,33 @@
   display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+/* Changer la couleur du background des liens au hover à l'intérieur du dropdown*/
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+/* Afficher les catégories en hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin-top: 138px;
+}
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+/* Changement de couleur des icônes */
+#cartIcon, #accountIcon{
+  color: white;
+}
+
+/* Changer la couleur du texte catégorie en hover */
+#cartIcon:hover,#accountIcon:hover{
+  color: grey;
+  text-decoration: none;
+}
+
+/* Flexbox de la navbar */
+.navbar-nav,
+.mr-auto, .narbar {
+flex: 1;
+margin: auto !important;
+display: flex;
+justify-content: space-around;
+}
