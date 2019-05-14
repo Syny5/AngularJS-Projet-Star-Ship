@@ -1,3 +1,33 @@
-<div ng-controller="cartController">
-  <a href="#">retour</a>
+<div ng-controller="homeController">
+  <nav class="navbar navbar-expand navbar-light bg-dark">
+    <!-- Logo / page d'accueil -->
+    <a class="navbar-brand text-white d-flex" href="#">Star Ship</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Catégories en dropdown -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <div class="dropdown">
+          <button class="dropbtn dropdown-toggle">Catégories</button>
+          <div class="dropdown-content">
+            <a href="#">Vaisseaux mères</a>
+            <a href="#">Vaisseaux de combat</a>
+            <a href="#">Vaisseaux cargo</a>
+            <a href="#">Vaisseaux de tourisme</a>
+          </div>
+        </div>
+        <!-- Icone Panier -->
+        <a href="#!/cart" id="cartIcon"><i class="fas fa-shopping-cart fa-2x"></i></a>
+        <!-- Icone compte -->
+        <a href="#" id="accountIcon"><i class="fas fa-user-circle fa-2x"></i></a>
+      </ul>
+    </div>
+  </nav>
+  <!-- Titre du panier -->
+  <h1>Votre panier</h1>
+  <!-- Bouton Acheter Maintenant -->
+  <div class="d-flex justify-content-center">
+    <button type="button" class="btn btn-dark toBuy">Acheter maintenant</button>
+  </div>
 </div>
