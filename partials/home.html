@@ -25,5 +25,52 @@
       </ul>
     </div>
   </nav>
+  <div class="row categories d-flex flex-column justify-content-center">
+        <h4 class="categories-title text-white m-2">Vaisseau Mère</h4>
+        <div class="row d-flex flex-row justify-content-center"ng-controller="ProductsCtrl">
+          <div class="card m-4 shadow" style="width: 18rem;" ng-repeat="product in products | filter:'Vaisseau Mère'">
+            <img src="assets/img/{{product.img}}" class="card-img-sm rounded" alt="">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white font-weight-bold">{{product.nom}}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Vaisseau Cargo -->
+      <div class="row categories d-flex flex-column justify-content-center">
+        <h4 class="categories-title text-white m-2">Vaisseau Cargo</h4>
+        <div class="row d-flex flex-row justify-content-center"ng-controller="ProductsCtrl">
+          <div class="card m-4 shadow" style="width: 18rem;" ng-repeat="product in products | filter:'Vaisseau Cargo'">
+            <img src="assets/img/{{product.img}}" class="card-img-sm rounded" alt="">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white font-weight-bold">{{product.nom}}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Vaisseau de combat -->
+      <div class="row categories d-flex flex-column justify-content-center">
+        <h4 class="categories-title text-white m-2">Vaisseau de combat</h4>
+        <div class="row d-flex flex-row justify-content-center"ng-controller="ProductsCtrl">
+          <div class="card m-4 shadow" style="width: 18rem;" ng-repeat="product in products | filter:'Vaisseau de combat'">
+            <img src="assets/img/{{product.img}}" class="card-img-sm rounded" alt="">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white font-weight-bold">{{product.nom}}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Vaisseau de tourisme -->
+      <div class="row categories d-flex flex-column justify-content-center">
+        <h4 class="categories-title text-white m-2">Vaisseau de tourisme</h4>
+        <div class="row d-flex flex-row justify-content-center"ng-controller="ProductsCtrl">
+          <div class="card m-4 shadow" style="width: 18rem;" ng-repeat="product in products | filter:'Vaisseau de tourisme'">
+            <img src="assets/img/{{product.img}}" class="card-img-sm rounded" alt="">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white font-weight-bold">{{product.nom}}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Fin de la NavBar -->
 </div>
-<!-- Fin de la NavBar -->

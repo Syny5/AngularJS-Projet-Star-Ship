@@ -31,6 +31,12 @@ starShipApp.config(function($routeProvider){
 starShipApp.controller('homeController', function(){
 
 })
+.controller('ProductsCtrl', function($scope, $http) {
+  $http.get('assets/js/products.json')
+       .then(function(res) {
+         $scope.products = res.data;
+       });
+})
 .controller('productsController', function(){
 
 })

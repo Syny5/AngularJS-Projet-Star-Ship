@@ -1,0 +1,142 @@
+[
+   {
+       "img": "../img/star_destroyer.jpg",
+       "marque": "Star Wars",
+       "reference": "sw001",
+       "type": "Vaisseau Mère",
+       "nom": "Star Destroyer",
+       "description": "Gros vaisseau capitaux de la saga Star Wars.",
+       "prix": 129.99,
+       "quantity": 1
+   },
+   {
+       "img": "../img/super-star-destroyer.jpg",
+       "marque": "Star Wars",
+       "reference": "sw002",
+       "type": "Vaisseau Mère",
+       "nom": "Super Star Destroyer",
+       "description": "C'est le star destroyer mais en plus gros.",
+       "prix": 399.99,
+       "quantity": 1
+   },
+   {
+       "img": "../img/uss_enterprise.png",
+       "marque": "Star Trek",
+       "reference": "st001",
+       "type": "Vaisseau Mère",
+       "nom": "USS Enterprise",
+       "description": "Le gros vaisseau de capitain kirk",
+       "prix": 800.00,
+       "quantity": 1
+   },
+   {
+       "img": "../img/javelin.jpg",
+       "marque": "Star Citizen",
+       "reference": "sc001",
+       "type": "Vaisseau Mère",
+       "nom": "Javelin",
+       "description": "Un bon gros vaisseau mère des familles de la marque star citizen.",
+       "prix": 999.99,
+       "quantity": 1
+   },
+   {
+       "img": "../img/holonet.jpg",
+       "marque": "Star Wars",
+       "reference": "sw003",
+       "type": "Vaisseau Cargo",
+       "nom": "Holonet",
+       "description": "Vaisseau cargo qui peut aussi transporter des gens.",
+       "prix": 300.90,
+       "quantity": 1
+   },
+   {
+       "img": "../img/hull_e.jpg",
+       "marque": "Star Citizen",
+       "reference": "sc002",
+       "type": "Vaisseau Cargo",
+       "nom": "Hull-e",
+       "description": "Vaisseau pouvant transporter jusqu'à 100 000 tonnes de bon gros chichons (pour Flavien.Corp).",
+       "prix": 150.98,
+       "quantity": 1
+   },
+   {
+       "img": "../img/caterpillar.jpg",
+       "marque": "Star Citizen",
+       "reference": "sc003",
+       "type": "Vaisseau Cargo",
+       "nom": "Caterpillar",
+       "description": "Gros transport modulaire pouvant s'adapter à tout type de missions militaire comme civil.",
+       "prix": 160.99,
+       "quantity": 1
+   },
+   {
+       "img": "../img/x_wing.jpg",
+       "marque": "Star Wars",
+       "reference": "sw004",
+       "type": "Vaisseau de combat",
+       "nom": "X-Wing",
+       "description": "Le super méga célèbre vaisseau de combat de star wars.",
+       "prix": 200.00,
+       "quantity": 1
+   },
+   {
+       "img": "../img/tie-fighter.png",
+       "marque": "Star Wars",
+       "reference": "sw005",
+       "type": "Vaisseau de combat",
+       "nom": "Tie-Fighter",
+       "description": "Le un petit peu moins célèbre mais quand même bien célèbre vaisseau de combat de star wars.",
+       "prix": 200.00,
+       "quantity": 1
+   },
+   {
+       "img": "../img/gladius.png",
+       "marque": "Star Citizen",
+       "reference": "sc004",
+       "type": "Vaisseau de combat",
+       "nom": "Gladius",
+       "description": "C'est le F-22 Raptor mais en plus futuriste.",
+       "prix": 400.00,
+       "quantity": 1
+   },
+   {
+       "img": "../img/chasseur_naboo.png",
+       "marque": "Star Wars",
+       "reference": "sw006",
+       "type": "Vaisseau de combat",
+       "nom": "Chasseur Naboo",
+       "description": "C'est le vaisseau chelou que prend anakin pour s'enfuir oklm de la planète Naboo alors qu'il à 7 ans .",
+       "prix": 100.00,
+       "quantity": 1
+   },
+   {
+       "img": "../img/890_jump.jpg",
+       "marque": "Star Citizen",
+       "reference": "sc005",
+       "type": "Vaisseau de tourisme",
+       "nom": "890-Jump",
+       "description": "Vaisseau de vols commerciaux qui ressemble à un yacht.",
+       "prix": 200.00,
+       "quantity": 1
+   },
+   {
+       "img": "../img/600i.jpg",
+       "marque": "Star Citizen",
+       "reference": "sc006",
+       "type": "Vaisseau de tourisme",
+       "nom": "600i",
+       "description": "La rolls des vaisseaux.",
+       "prix": 9800000.00,
+       "quantity": 1
+   },
+   {
+       "img": "../img/tesla.jpg",
+       "marque": "Tesla",
+       "reference": "t001",
+       "type": "Vaisseau de tourisme",
+       "nom": "Tesla Roadster",
+       "description": "La tesla d'Elon Musk qu'il à envoyé dans l'espace et franchement sa marche bien.",
+       "prix": 300.00,
+       "quantity": 1
+   }
+]
