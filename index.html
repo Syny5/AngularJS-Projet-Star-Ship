@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" ng-app>
+<html lang="fr" ng-app="starShipApp">
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +8,19 @@
       <link rel="stylesheet" href="assets/css/victor.css">
       <link rel="stylesheet" href="assets/css/flavien.css">
       <link rel="stylesheet" href="assets/css/nicolas.css">
+      <script src="assets/js/angular/angular.min.js"></script>
+      <script src="assets/js/angular/angular-route.min.js"></script>
       <title></title>
   </head>
   <body>
       <!-- container Bootstrap -->
-      <div class="container">
+      <div class="container-fluid">
           <!-- header -->
           <header>
 
           </header>
           <!-- main -->
-          <main>
+          <main ng-view>
 
           </main>
           <!-- footer -->
@@ -30,11 +32,10 @@
       <script src="assets/js/jquery-3.4.0.min.js"></script>
       <script src="assets/js/popper.min.js"></script>
       <script src="assets/js/bootstrap.min.js"></script>
-      <script src="assets/js/angular/angular.min.js"></script>
-      <script src="assets/js/angular/angular-route.min.js"></script>
       <!-- mes scripts -->
-      <script src="assets/js/victor.js"></script>
+      <script src="assets/js/myRoutes.js"></script>
       <script src="assets/js/flavien.js"></script>
       <script src="assets/js/nicolas.js"></script>
+      <script src="assets/js/victor2.js"></script>
   </body>
 </html>
