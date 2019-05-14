@@ -41,7 +41,6 @@
 /* Afficher les catégories en hover */
 .dropdown:hover .dropdown-content {
   display: block;
-  margin-top: 138px;
 }
 
 /* Changement de couleur des icônes */
@@ -62,4 +61,5 @@ flex: 1;
 margin: auto !important;
 display: flex;
 justify-content: space-around;
+align-items : center;
 }
