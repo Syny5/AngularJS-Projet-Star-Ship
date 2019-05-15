@@ -43,8 +43,11 @@ starShipApp.controller('homeController', function(){
 .controller('cartController', function(){
 
 })
-.controller('detailsController', function(){
-
+.controller('detailsController', function($scope, $http){
+  $http.get('assets/js/products.json')
+       .then(function(res) {
+         $scope.products = res.data;
+       });
 })
 .controller('categoriesController', function(){
 
