@@ -89,6 +89,15 @@ h1{
   background-color: black;
 }
 
-li{
+.productClassStyle{
   color:white;
+}
+
+#mainImg{
+  width: 35em;
+}
+
+#nameProductClassStyle{
+  font-weight: bold;
+  text-decoration: underline;
 }

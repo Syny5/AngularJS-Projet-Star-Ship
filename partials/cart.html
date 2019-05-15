@@ -1,4 +1,4 @@
-<div ng-controller="homeController">
+<div ng-controller="cartController">
   <nav class="navbar navbar-expand-sm navbar-light starShipClass">
     <!-- Logo / page d'accueil -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,18 +28,12 @@
   </nav>
   <!-- Titre du panier -->
   <h1>Votre panier</h1>
-  <div ng-repeat="product in products">
-    <div class="row my-3 mx-3">
-    <div class="col-md-3">
-      <div class="text-center">
-        <img id="mainImg" class="img-fluid rounded" src="assets/img/{{img}}" alt=""></img>
-      </div>
-    </div>
+  <div ng-repeat="product in cartList">
     <div class="col-md-4">
-      <ul>
-        <li>Nom : {{product.nom}}</li>
-        <li>Prix : {{product.prix}}</li>
-      </ul>
+        <img src="../assets/img/{{product.img}}">
+        <p class="productClassStyle" id="nameProductClassStyle">Nom : {{product.nom}}</p>
+        <p class="productClassStyle">Prix : {{product.prix | currency: '€'}}</p>
+        <p class="productClassStyle">Quantité : {{product.quantity}}</p>
     </div>
   </div>
   <hr></hr>

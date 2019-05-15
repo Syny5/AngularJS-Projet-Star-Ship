@@ -22,7 +22,7 @@ starShipApp.config(function($routeProvider){
     controller: 'productsController',
     templateUrl: 'partials/products.html'
   })
-  .when('/cart',{
+  .when('/cart/:id?',{
     controller: 'cartController',
     templateUrl: 'partials/cart.html'
   })
@@ -52,9 +52,7 @@ starShipApp.controller('homeController', function(){
 .controller('productsController', function(){
 
 })
-.controller('cartController', function($scope, $rootScope, $window){
-  $rootScope.cartList = [];
-
+.controller('cartController', function($scope){
 
 })
 .controller('detailsController', function($scope, $http, $rootScope, $routeParams){
@@ -75,8 +73,9 @@ starShipApp.controller('homeController', function(){
        $scope.addCart = function() {
            var test = true;
            for (var i = 0; i < $rootScope.cartList.length; i++) {
+             // Si un élément est déjà dans le panier, on ne peut pas le remettre
              if ($rootScope.cartList[i] == $scope.products[$scope.id]) {
-               alert('Élement déjà présent dans le panier');
+               alert('Ce produit est déjà dans votre panier. Pour un meilleur équilibre des richesses, vous ne pouvez acheter qu\'une seule sorte de vaisseau par commande.');
                test = false;
              }
            }
