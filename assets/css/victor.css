@@ -63,10 +63,6 @@ justify-content: space-around;
 align-items : center;
 }
 
-body{
-  background-color: black;
-}
-
 /* Titre panier */
 h1{
   text-align: center;
@@ -81,4 +77,18 @@ h1{
   width: 100%;
   object-fit: cover;
   height: 300px;
+}
+
+/*  Menu burger  */
+.navbar-toggler{
+  background-color: white;
+  border-radius: 10%;
+}
+
+.starShipClass{
+  background-color: black;
+}
+
+li{
+  color:white;
 }

@@ -1,31 +1,49 @@
 <div ng-controller="homeController">
-  <nav class="navbar navbar-expand navbar-light bg-dark">
+  <nav class="navbar navbar-expand-sm navbar-light starShipClass">
     <!-- Logo / page d'accueil -->
-    <a class="navbar-brand text-white d-flex" href="#">Star Ship</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- Catégories en dropdown -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <div class="dropdown">
-          <button class="dropbtn dropdown-toggle">Catégories</button>
-          <div class="dropdown-content">
-            <a href="#">Vaisseaux mères</a>
-            <a href="#">Vaisseaux de combat</a>
-            <a href="#">Vaisseaux cargo</a>
-            <a href="#">Vaisseaux de tourisme</a>
+    <a class="navbar-brand text-white d-flex" href="#">Star Ship</a>
+      <!-- Catégories en dropdown -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <div class="dropdown">
+            <select ng-model="query">
+              <option value="">Tous les vaisseaux</option>
+              <option value="Vaisseau Mère">Vaisseaux Mère</option>
+              <option value="Vaisseau Cargo">Vaisseaux Cargo</option>
+              <option value="Vaisseau de combat">Vaisseaux de combat</option>
+              <option value="Vaisseau de tourisme">Vaisseaux de tourisme</option>
+            </select>
           </div>
-        </div>
-        <!-- Icone Panier -->
-        <a href="#!/cart" id="cartIcon"><i class="fas fa-shopping-cart fa-2x"></i></a>
-        <!-- Icone compte -->
-        <a href="#" id="accountIcon"><i class="fas fa-user-circle fa-2x"></i></a>
-      </ul>
-    </div>
+          <!-- barre de recherche -->
+          <input type="text" ng-model="query" placeholder="Rechercher">
+        </ul>
+      </div>
+    <!-- Icone Panier -->
+    <a href="#!/cart" id="cartIcon"><i class="fas fa-shopping-cart fa-2x mr-2"></i></a>
+    <!-- Icone compte -->
+    <a href="#" id="accountIcon"><i class="fas fa-user-circle fa-2x"></i></a>
   </nav>
   <!-- Titre du panier -->
   <h1>Votre panier</h1>
+  <div ng-repeat="product in products">
+    <div class="row my-3 mx-3">
+    <div class="col-md-3">
+      <div class="text-center">
+        <img id="mainImg" class="img-fluid rounded" src="assets/img/{{img}}" alt=""></img>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <ul>
+        <li>Nom : {{product.nom}}</li>
+        <li>Prix : {{product.prix}}</li>
+      </ul>
+    </div>
+  </div>
+  <hr></hr>
+  </div>
   <!-- Bouton Acheter Maintenant -->
   <div class="d-flex justify-content-center">
     <button type="button" class="btn btn-dark toBuy">Acheter maintenant</button>

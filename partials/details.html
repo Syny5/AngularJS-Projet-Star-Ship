@@ -1,32 +1,32 @@
-<!-- Début de la NavBar -->
 <div ng-controller="homeController">
-  <nav class="navbar navbar-expand navbar-light bg-dark">
+  <!-- Début de la NavBar -->
+  <nav class="navbar navbar-expand-sm navbar-light starShipClass">
     <!-- Logo / page d'accueil -->
-    <a class="navbar-brand text-white d-flex" href="#">Star Ship</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- Catégories en dropdown -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <div class="dropdown">
-        <select ng-model="query">
-          <option value="">Tout les vaisseaux</option>
-          <option value="Vaisseau Mère">Vaisseaux Mère</option>
-          <option value="Vaisseau Cargo">Vaisseau Cargo</option>
-          <option value="Vaisseau de combat">Vaisseau de combat</option>
-          <option value="Vaisseau de tourisme">Vaisseau de tourisme</option>
-        </select>
+    <a class="navbar-brand text-white d-flex" href="#">Star Ship</a>
+      <!-- Catégories en dropdown -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <div class="dropdown">
+            <select ng-model="query">
+              <option value="">Tous les vaisseaux</option>
+              <option value="Vaisseau Mère">Vaisseaux Mère</option>
+              <option value="Vaisseau Cargo">Vaisseaux Cargo</option>
+              <option value="Vaisseau de combat">Vaisseaux de combat</option>
+              <option value="Vaisseau de tourisme">Vaisseaux de tourisme</option>
+            </select>
+          </div>
+          <!-- barre de recherche -->
+          <input type="text" ng-model="query" placeholder="Rechercher">
+        </ul>
       </div>
-      <!-- barre de recherche -->
-      <input type="text" ng-model="query" placeholder="Rechercher">
-      <!-- Icone Panier -->
-      <a href="#!/cart" id="cartIcon"><i class="fas fa-shopping-cart fa-2x"></i></a>
-      <!-- Icone compte -->
-      <a href="#" id="accountIcon"><i class="fas fa-user-circle fa-2x"></i></a>
-    </ul>
-  </div>
-</nav>
+    <!-- Icone Panier -->
+    <a href="#!/cart" id="cartIcon"><i class="fas fa-shopping-cart fa-2x mr-2"></i></a>
+    <!-- Icone compte -->
+    <a href="#" id="accountIcon"><i class="fas fa-user-circle fa-2x"></i></a>
+  </nav>
 <!-- description du produit -->
   <div class="row my-3 mx-3 d-flex justify-content-center">
     <div class="col-md-6 article">
@@ -42,7 +42,7 @@
       </div>
       <div class="row d-flex flex-row justify-content-around m-2">
         <p class="text-white text-center d-flex align-items-center font-weight-bold m-0">{{prix | currency: '€'}}</p>
-        <button type="button" class="btn btn-dark" name="button">Ajouter au panier</button>
+        <button type="button" class="btn btn-dark addToCart" ng-click="addCart()" name="button">Ajouter au panier</button>
       </div>
     </div>
   </div>

@@ -6,7 +6,7 @@
        "reference": "sw001",
        "type": "Vaisseau Mère",
        "nom": "Star Destroyer",
-       "description": "Gros vaisseau capitaux de la saga Star Wars.",
+       "description": "Gros vaisseau capital de la saga Star Wars.",
        "prix": 129.99,
        "quantity": 1
    },
@@ -116,7 +116,7 @@
        "reference": "sw006",
        "type": "Vaisseau de combat",
        "nom": "Chasseur Naboo",
-       "description": "C'est le vaisseau chelou que prend anakin pour s'enfuir oklm de la planète Naboo alors qu'il à 7 ans .",
+       "description": "C'est le vaisseau chelou que prend anakin pour s'enfuir oklm de la planète Naboo alors qu'il a 7 ans .",
        "prix": 100.00,
        "quantity": 1
    },
@@ -149,7 +149,7 @@
        "reference": "t001",
        "type": "Vaisseau de tourisme",
        "nom": "Tesla Roadster",
-       "description": "La tesla d'Elon Musk qu'il à envoyé dans l'espace et franchement sa marche bien.",
+       "description": "La tesla d'Elon Musk qu'il a envoyé dans l'espace et franchement ça marche bien.",
        "prix": 300.00,
        "quantity": 1
    }
