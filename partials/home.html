@@ -29,9 +29,9 @@
 </nav>
 <!-- produits -->
 <div class="row d-flex flex-row justify-content-center"ng-controller="ProductsCtrl">
-  <div class="card m-4 shadow" ng-repeat="product in products | filter:query | orderBy:order">
-    <a href="#!/details">
-      <img src="assets/img/{{product.img}}" class="card-img rounded" alt="">
+  <div class="card m-4 shadow" style="width: 18rem;" ng-repeat="product in products | filter:query | orderBy:order">
+    <a href="#!/details/{{$index}}">
+      <img src="assets/img/{{product.img}}" class="card-img-sm rounded" alt="">
     <div class="card-img-overlay">
       <h5 class="card-title text-white font-weight-bold">{{product.nom}}</h5>
     </div>

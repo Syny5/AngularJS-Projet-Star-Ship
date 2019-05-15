@@ -1,3 +1,48 @@
-<div ng-repeat="product in products" ng-controller="detailsController">
-  <p class="text-white">{{product.nom}}</p>
-</div>
+<!-- Début de la NavBar -->
+<div ng-controller="homeController">
+  <nav class="navbar navbar-expand navbar-light bg-dark">
+    <!-- Logo / page d'accueil -->
+    <a class="navbar-brand text-white d-flex" href="#">Star Ship</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Catégories en dropdown -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <div class="dropdown">
+        <select ng-model="query">
+          <option value="">Tout les vaisseaux</option>
+          <option value="Vaisseau Mère">Vaisseaux Mère</option>
+          <option value="Vaisseau Cargo">Vaisseau Cargo</option>
+          <option value="Vaisseau de combat">Vaisseau de combat</option>
+          <option value="Vaisseau de tourisme">Vaisseau de tourisme</option>
+        </select>
+      </div>
+      <!-- barre de recherche -->
+      <input type="text" ng-model="query" placeholder="Rechercher">
+      <!-- Icone Panier -->
+      <a href="#!/cart" id="cartIcon"><i class="fas fa-shopping-cart fa-2x"></i></a>
+      <!-- Icone compte -->
+      <a href="#" id="accountIcon"><i class="fas fa-user-circle fa-2x"></i></a>
+    </ul>
+  </div>
+</nav>
+<!-- description du produit -->
+  <div class="row my-3 mx-3 d-flex justify-content-center">
+    <div class="col-md-6 article">
+      <p><a href="#!"><small>Retour</small></a></p>
+      <div class="row d-flex justify-content-center text-center">
+          <img src="assets/img/{{img}}" class="card-img-sm rounded" alt="">
+      </div>
+      <div class="row flex-column">
+        <h5 class="text-white font-weight-bold text-center">{{nom}}</h5>
+        <p class="text-white text-center">{{description}}</p>
+        <p class="text-white text-center d-flex flex-column"><span class="text-center font-weight-bold">Type</span>{{type}}</p>
+        <p class="text-white text-center d-flex flex-column"><span class="text-center font-weight-bold">Marque: </span>{{marque}}</p>
+      </div>
+      <div class="row d-flex flex-row justify-content-around m-2">
+        <p class="text-white text-center d-flex align-items-center font-weight-bold m-0">{{prix | currency: '€'}}</p>
+        <button type="button" class="btn btn-dark" name="button">Ajouter au panier</button>
+      </div>
+    </div>
+  </div>

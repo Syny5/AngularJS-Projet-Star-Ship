@@ -14,7 +14,7 @@ starShipApp.config(function($routeProvider){
     controller: 'cartController',
     templateUrl: 'partials/cart.html'
   })
-  .when('/details',{
+  .when('/details/:id?',{
     controller: 'detailsController',
     templateUrl: 'partials/details.html'
   })
@@ -43,11 +43,20 @@ starShipApp.controller('homeController', function(){
 .controller('cartController', function(){
 
 })
-.controller('detailsController', function($scope, $http){
+.controller('detailsController', function($scope, $http, $rootScope, $routeParams){
   $http.get('assets/js/products.json')
        .then(function(res) {
          $scope.products = res.data;
        });
+       $scope.id=$routeParams.id;
+       $scope.nom = $scope.products[$scope.id].nom;
+       $scope.prix = $scope.products[$scope.id].prix;
+       $scope.img = $scope.products[$scope.id].img;
+       $scope.marque = $scope.products[$scope.id].marque;
+       $scope.type = $scope.products[$scope.id].type;
+       $scope.description = $scope.products[$scope.id].description;
+       $scope.quantity = $scope.products[$scope.id].quantity;
+       $scope.reference = $scope.products[$scope.id].reference;
 })
 .controller('categoriesController', function(){
 

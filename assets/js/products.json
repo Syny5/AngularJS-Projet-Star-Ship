@@ -1,5 +1,6 @@
 [
    {
+       "id": 0,
        "img": "../img/star_destroyer.jpg",
        "marque": "Star Wars",
        "reference": "sw001",
@@ -10,6 +11,7 @@
        "quantity": 1
    },
    {
+       "id": 1,
        "img": "../img/super-star-destroyer.jpg",
        "marque": "Star Wars",
        "reference": "sw002",
@@ -20,6 +22,7 @@
        "quantity": 1
    },
    {
+       "id": 2,
        "img": "../img/uss_enterprise.png",
        "marque": "Star Trek",
        "reference": "st001",
@@ -30,6 +33,7 @@
        "quantity": 1
    },
    {
+       "id": 3,
        "img": "../img/javelin.jpg",
        "marque": "Star Citizen",
        "reference": "sc001",
@@ -40,6 +44,7 @@
        "quantity": 1
    },
    {
+       "id": 4,
        "img": "../img/holonet.jpg",
        "marque": "Star Wars",
        "reference": "sw003",
@@ -50,6 +55,7 @@
        "quantity": 1
    },
    {
+       "id": 5,
        "img": "../img/hull_e.jpg",
        "marque": "Star Citizen",
        "reference": "sc002",
@@ -60,6 +66,7 @@
        "quantity": 1
    },
    {
+       "id": 6,
        "img": "../img/caterpillar.jpg",
        "marque": "Star Citizen",
        "reference": "sc003",
@@ -70,6 +77,7 @@
        "quantity": 1
    },
    {
+       "id": 7,
        "img": "../img/x_wing.jpg",
        "marque": "Star Wars",
        "reference": "sw004",
@@ -80,6 +88,7 @@
        "quantity": 1
    },
    {
+       "id": 8,
        "img": "../img/tie-fighter.png",
        "marque": "Star Wars",
        "reference": "sw005",
@@ -90,6 +99,7 @@
        "quantity": 1
    },
    {
+       "id": 9,
        "img": "../img/gladius.png",
        "marque": "Star Citizen",
        "reference": "sc004",
@@ -100,6 +110,7 @@
        "quantity": 1
    },
    {
+       "id": 10,
        "img": "../img/chasseur_naboo.png",
        "marque": "Star Wars",
        "reference": "sw006",
@@ -110,6 +121,7 @@
        "quantity": 1
    },
    {
+       "id": 11,
        "img": "../img/890_jump.jpg",
        "marque": "Star Citizen",
        "reference": "sc005",
@@ -120,6 +132,7 @@
        "quantity": 1
    },
    {
+       "id": 12,
        "img": "../img/600i.jpg",
        "marque": "Star Citizen",
        "reference": "sc006",
@@ -130,6 +143,7 @@
        "quantity": 1
    },
    {
+       "id": 13,
        "img": "../img/tesla.jpg",
        "marque": "Tesla",
        "reference": "t001",
