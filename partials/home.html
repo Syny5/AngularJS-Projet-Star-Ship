@@ -1,31 +1,31 @@
 <!-- Début de la NavBar -->
 <div ng-controller="homeController">
-  <nav class="navbar navbar-expand navbar-light bg-dark">
+  <nav class="navbar navbar-expand-sm navbar-light bg-dark starShipClass">
     <!-- Logo / page d'accueil -->
-    <a class="navbar-brand text-white d-flex" href="#">Star Ship</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- Catégories en dropdown -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <div class="dropdown">
-          <select ng-model="query">
-            <option value="">Tous les vaisseaux</option>
-            <option value="Vaisseau Mère">Vaisseaux Mère</option>
-            <option value="Vaisseau Cargo">Vaisseaux Cargo</option>
-            <option value="Vaisseau de combat">Vaisseaux de combat</option>
-            <option value="Vaisseau de tourisme">Vaisseaux de tourisme</option>
-          </select>
-        </div>
-        <!-- barre de recherche -->
-        <input type="text" ng-model="query" placeholder="Rechercher">
-        <!-- Icone Panier -->
-        <a href="#!/cart" id="cartIcon"><i class="fas fa-shopping-cart fa-2x"></i></a>
-        <!-- Icone compte -->
-        <a href="#" id="accountIcon"><i class="fas fa-user-circle fa-2x"></i></a>
-      </ul>
-    </div>
+    <a class="navbar-brand text-white d-flex" href="#">Star Ship</a>
+      <!-- Catégories en dropdown -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <div class="dropdown">
+            <select ng-model="query">
+              <option value="">Tous les vaisseaux</option>
+              <option value="Vaisseau Mère">Vaisseaux Mère</option>
+              <option value="Vaisseau Cargo">Vaisseaux Cargo</option>
+              <option value="Vaisseau de combat">Vaisseaux de combat</option>
+              <option value="Vaisseau de tourisme">Vaisseaux de tourisme</option>
+            </select>
+          </div>
+          <!-- barre de recherche -->
+          <input type="text" ng-model="query" placeholder="Rechercher">
+        </ul>
+      </div>
+    <!-- Icone Panier -->
+    <a href="#!/cart" id="cartIcon"><i class="fas fa-shopping-cart fa-2x mr-2"></i></a>
+    <!-- Icone compte -->
+    <a href="#" id="accountIcon"><i class="fas fa-user-circle fa-2x"></i></a>
   </nav>
   <!-- Début Carousel -->
   <div id="carouselExampleIndicators" class="carousel slide text-center container-fluid mt-5 mb-5" data-ride="carousel">

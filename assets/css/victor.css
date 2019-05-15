@@ -55,8 +55,7 @@
 }
 
 /* Flexbox de la navbar */
-.navbar-nav,
-.mr-auto, .narbar {
+.navbar-nav, .mr-auto, .starShipClass {
 flex: 1;
 margin: auto !important;
 display: flex;
