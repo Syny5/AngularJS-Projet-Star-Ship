@@ -1,0 +1,13 @@
+.footercontact{
+  background-color: #343A40;
+  color: white;
+  opacity: 50%;
+}
+.footerlink{
+    color: white;
+
+}
+.footerlink:hover{
+    color: white;
+    font-weight: bold;
+}

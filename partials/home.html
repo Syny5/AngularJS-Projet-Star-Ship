@@ -10,69 +10,68 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <div class="dropdown">
-        <select ng-model="query">
-          <option value="">Tout les vaisseaux</option>
-          <option value="Vaisseau Mère">Vaisseaux Mère</option>
-          <option value="Vaisseau Cargo">Vaisseau Cargo</option>
-          <option value="Vaisseau de combat">Vaisseau de combat</option>
-          <option value="Vaisseau de tourisme">Vaisseau de tourisme</option>
-        </select>
-      </div>
-      <!-- barre de recherche -->
-      <input type="text" ng-model="query" placeholder="Rechercher">
-      <!-- Icone Panier -->
-      <a href="#!/cart" id="cartIcon"><i class="fas fa-shopping-cart fa-2x"></i></a>
-      <!-- Icone compte -->
-      <a href="#" id="accountIcon"><i class="fas fa-user-circle fa-2x"></i></a>
-    </ul>
-  </div>
-</nav>
-<!-- produits -->
-<div class="row d-flex flex-row justify-content-center"ng-controller="ProductsCtrl">
-  <div class="card m-4 shadow" style="width: 18rem;" ng-repeat="product in products | filter:query | orderBy:order">
-    <a href="#!/details/{{$index}}">
-      <img src="assets/img/{{product.img}}" class="card-img-sm rounded" alt="">
-    <div class="card-img-overlay">
-      <h5 class="card-title text-white font-weight-bold">{{product.nom}}</h5>
+          <select ng-model="query">
+            <option value="">Tous les vaisseaux</option>
+            <option value="Vaisseau Mère">Vaisseaux Mère</option>
+            <option value="Vaisseau Cargo">Vaisseaux Cargo</option>
+            <option value="Vaisseau de combat">Vaisseaux de combat</option>
+            <option value="Vaisseau de tourisme">Vaisseaux de tourisme</option>
+          </select>
+        </div>
+        <!-- barre de recherche -->
+        <input type="text" ng-model="query" placeholder="Rechercher">
+        <!-- Icone Panier -->
+        <a href="#!/cart" id="cartIcon"><i class="fas fa-shopping-cart fa-2x"></i></a>
+        <!-- Icone compte -->
+        <a href="#" id="accountIcon"><i class="fas fa-user-circle fa-2x"></i></a>
+      </ul>
     </div>
-    </a>
+  </nav>
+  <!-- Début Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide text-center container-fluid mt-5 mb-5" data-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+              <video class="img-fluid" src="assets/videos/fighter.mp4" autoplay poster="posterimage.jpg" muted loop>
+              </video>
+          </div>
+          <div class="carousel-item">
+              <video class="img-fluid" src="assets/videos/mere.mp4" autoplay poster="posterimage.jpg" muted loop>
+              </video>
+          </div>
+          <div class="carousel-item">
+              <video class="img-fluid" src="assets/videos/cargo.mp4" autoplay poster="posterimage.jpg" muted loop>
+              </video>
+          </div>
+      </div>
   </div>
-</div>
-<!-- Vaisseau Cargo -->
-<!-- <div class="row categories d-flex flex-column justify-content-center">
-<h4 class="categories-title text-white m-2 font-weight-bold">Vaisseau Cargo</h4>
-<div class="row d-flex flex-row justify-content-center"ng-controller="ProductsCtrl">
-<div class="card m-4 shadow" style="width: 18rem;" ng-repeat="product in products | filter:order">
-<img src="assets/img/{{product.img}}" class="card-img-sm rounded" alt="">
-<div class="card-img-overlay">
-<h5 class="card-title text-white font-weight-bold">{{product.nom}}</h5>
-</div>
-</div>
-</div>
-</div> -->
-<!-- Vaisseau de combat -->
-<!-- <div class="row categories d-flex flex-column justify-content-center">
-<h4 class="categories-title text-white m-2 font-weight-bold">Vaisseau de combat</h4>
-<div class="row d-flex flex-row justify-content-center"ng-controller="ProductsCtrl">
-<div class="card m-4 shadow" style="width: 18rem;" ng-repeat="product in products | filter:order">
-<img src="assets/img/{{product.img}}" class="card-img-sm rounded" alt="">
-<div class="card-img-overlay">
-<h5 class="card-title text-white font-weight-bold">{{product.nom}}</h5>
-</div>
-</div>
-</div>
-</div> -->
-<!-- Vaisseau de tourisme -->
-<!-- <div class="row categories d-flex flex-column justify-content-center">
-<h4 class="categories-title text-white m-2 font-weight-bold">Vaisseau de tourisme</h4>
-<div class="row d-flex flex-row justify-content-center"ng-controller="ProductsCtrl">
-<div class="card m-4 shadow" style="width: 18rem;" ng-repeat="product in products | filter:order">
-<img src="assets/img/{{product.img}}" class="card-img-sm rounded" alt="">
-<div class="card-img-overlay">
-<h5 class="card-title text-white font-weight-bold">{{product.nom}}</h5>
-</div>
-</div>
-</div>
-</div> -->
-<!-- Fin de la NavBar -->
+  <!-- Fin Carousel -->
+  <!-- produits -->
+  <div class="row d-flex flex-row justify-content-center"ng-controller="ProductsCtrl">
+    <div class="card m-4 shadow" style="width: 18rem;" ng-repeat="product in products | filter:query | orderBy:order">
+      <a href="#!/details/{{$index}}">
+        <img src="assets/img/{{product.img}}" class="card-img-sm rounded" alt="">
+      <div class="card-img-overlay">
+        <h5 class="card-title text-white font-weight-bold">{{product.nom}}</h5>
+      </div>
+      </a>
+    </div>
+  </div>
+  <!-- Début footer -->
+  <div class="page-footer mt-4 pt-2 footercontact">
+    <div class="text-center">
+      <h5 class="text-uppercase">StarShip Builder</h5>
+      <p class="contact"> mail : starship.builder@gmail.com</p>
+      <p class="contact">tel : 0345675424</p>
+    </div>
+    <div class="container text-center">
+      <div class="footer-copyright">© 2019 Copyright: Victor, Nicolas, Flavien.
+        <a class="footerlink"href="https://github.com/la-manu-amiens-promo-2/Projet-NFV">Projet e-Commerce</a>
+      </div>
+    </div>
+  </div>
 </div>

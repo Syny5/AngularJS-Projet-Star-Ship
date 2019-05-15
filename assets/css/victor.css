@@ -68,10 +68,18 @@ body{
   background-color: black;
 }
 
+/* Titre panier */
 h1{
   text-align: center;
   font-weight: bold;
   color: white;
   text-decoration: underline;
   margin-top: 20px;
+}
+
+/* Modification des images du Carrousel */
+.img-fluid{
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
 }
