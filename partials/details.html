@@ -30,7 +30,6 @@
 <!-- description du produit -->
   <div class="row my-3 mx-3 d-flex justify-content-center">
     <div class="col-md-6 article">
-      <p><a href="#!"><small>Retour</small></a></p>
       <div class="row d-flex justify-content-center text-center">
           <img src="assets/img/{{img}}" class="card-img-sm rounded" alt="">
       </div>
@@ -43,6 +42,9 @@
       <div class="row d-flex flex-row justify-content-around m-2">
         <p class="text-white text-center d-flex align-items-center font-weight-bold m-0">{{prix | currency: '€'}}</p>
         <button type="button" class="btn btn-dark addToCart" ng-click="addCart()" name="button">Ajouter au panier</button>
+      </div>
+      <div class="d-flex justify-content-center">
+        <a href="#!"><button type="button" class="btn returnBtn">Retour</button></a>
       </div>
     </div>
   </div>

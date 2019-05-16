@@ -118,6 +118,13 @@ h1{
   font-weight: bold;
 }
 
+.returnBtn{
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
 /* Responsive vidéos */
 @media all and (max-width : 686px){
   .img-fluid{
