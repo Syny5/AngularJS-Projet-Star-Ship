@@ -120,11 +120,23 @@ h1{
   font-weight: bold;
 }
 
+/* Bouton retour / continuer mes achats */
 .returnBtn{
   background-color: black;
   color: white;
   margin-top: 20px;
   font-weight: bold;
+}
+
+#emptyCart{
+  margin-top: 40px;
+  color: white;
+  background-color: #2F4F4F	;
+  font-weight: bold;
+}
+
+#emptyCart:hover{
+  color: black;
 }
 
 /* Responsive vidéos */

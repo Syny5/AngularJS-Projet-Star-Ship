@@ -52,6 +52,10 @@ starShipApp.controller('homeController', function(){
           // On supprime un item du tableau en donnant son $index en paramètre
           $scope.cartList.splice($index, 1);
       };
+      $('#emptyCart').on('click', function(){
+      $('.allProductsInCartList').empty();
+      location.reload();
+  });
 
 })
 .controller('detailsController', function($scope, $http, $rootScope, $routeParams){

@@ -34,7 +34,6 @@
           <img ng-src="assets/img/{{product.img}}" class="imgCart rounded">
           <p class="productClassStyle mt-2" id="nameProductClassStyle">Nom : {{product.nom}}</p>
           <p class="productClassStyle">Prix : {{product.prix | currency: '€'}}</p>
-          <p class="productClassStyle">Quantité : {{product.quantity}}</p>
           <button type="button" name="remove" class="btn item_remove_button m-2" ng-click="remove($index)">Supprimer</button>
       </div>
     </div>
@@ -43,7 +42,11 @@
   <div class="d-flex justify-content-center">
     <button type="button" class="btn btnIntoCart" id="toBuyNow">Acheter maintenant</button>
   </div>
+  <!-- Bouton Continuer mes achats -->
   <div class="d-flex justify-content-center">
     <a href="#!"><button type="button" class="btn returnBtn">Continuer mes achats</button></a>
+  </div>
+  <div class="d-flex justify-content-center">
+    <button type="button" id="emptyCart" class="btn">Vider le panier</button>
   </div>
 </div>
