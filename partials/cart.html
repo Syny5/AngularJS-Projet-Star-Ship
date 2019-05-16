@@ -4,7 +4,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand text-white d-flex" href="#">Star Ship</a>
+    <a class="navbar-brand text-white d-flex" href="#">Star-Ship.fr</a>
       <!-- Catégories en dropdown -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -32,11 +32,17 @@
     <div ng-repeat="product in cartList">
       <div class="row-md-2 m-2 articleCart border-rounded">
           <img ng-src="assets/img/{{product.img}}" class="imgCart rounded">
-          <p class="productClassStyle mt-2" id="nameProductClassStyle">Nom : {{product.nom}}</p>
-          <p class="productClassStyle">Prix : {{product.prix | currency: '€'}}</p>
+          <p class="productClassStyle m-2" id="nameProductClassStyle">Nom : {{product.nom}}</p>
+          <p class="productClassStyle m-2">Prix : {{product.prix | currency: '€'}}</p>
           <button type="button" name="remove" class="btn item_remove_button m-2" ng-click="remove($index)">Supprimer</button>
       </div>
     </div>
+  </div>
+  <!-- Partie total -->
+  <div class="d-flex justify-content-center font-weight-bold mt-2">
+    <span class="text-white">
+        Total : {{(totalPanier | currency: " ") + " €"}}
+    </span>
   </div>
   <!-- Bouton Acheter Maintenant -->
   <div class="d-flex justify-content-center">
@@ -46,6 +52,7 @@
   <div class="d-flex justify-content-center">
     <a href="#!"><button type="button" class="btn returnBtn">Continuer mes achats</button></a>
   </div>
+  <!-- Bouton vider la panier -->
   <div class="d-flex justify-content-center">
     <button type="button" id="emptyCart" class="btn">Vider le panier</button>
   </div>

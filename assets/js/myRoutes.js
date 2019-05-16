@@ -31,6 +31,7 @@ starShipApp.config(function($routeProvider){
     controller: 'detailsController',
     templateUrl: 'partials/details.html'
   })
+  // "Si on se retrouve sur une page sans route, nous sommes de retour vers l'accueil."
   .otherwise({
     redirectTo: '/home'
   });
@@ -40,24 +41,29 @@ starShipApp.config(function($routeProvider){
 starShipApp.controller('homeController', function(){
 
 })
+// Controller des produits
 .controller('ProductsCtrl', function($scope, $http) {
   $http.get('assets/js/products.json')
        .then(function(res) {
          $scope.products = res.data;
        });
 })
+// Controller du panier
 .controller('cartController', function($scope){
-  // Fonction qui supprime l'item du panier au clic sur le bouton Supprimer
+  // Fonction qui supprime le vaisseau du panier au clic sur le bouton Supprimer
       $scope.remove = function ($index) {
-          // On supprime un item du tableau en donnant son $index en paramètre
+          // On supprime le vaisseau du tableau en donnant son $index en paramètre
           $scope.cartList.splice($index, 1);
       };
+      //Fonction vider le panier : au clic, on vide la div qui contient les éléments du produit et on recharge la page.
       $('#emptyCart').on('click', function(){
       $('.allProductsInCartList').empty();
       location.reload();
-  });
-
+    });
+    // On récupère la fonction totale déclarée plus bas dans notre controller.
+    $scope.totalPanier = total;
 })
+// Controller - description des produits
 .controller('detailsController', function($scope, $http, $rootScope, $routeParams){
   $http.get('assets/js/products.json')
        .then(function(res) {
@@ -72,9 +78,11 @@ starShipApp.controller('homeController', function(){
        $scope.description = $scope.products[$scope.id].description;
        $scope.quantity = $scope.products[$scope.id].quantity;
        $scope.reference = $scope.products[$scope.id].reference;
-
+       // Ajout de la fonction "addCart" qui permet d'ajouter au panier.
        $scope.addCart = function() {
+         // La variable test permet de dire "quand le booléen est true"
            var test = true;
+           // Déclaration d'une boucle avec i.
            for (var i = 0; i < $rootScope.cartList.length; i++) {
              // Si un élément est déjà dans le panier, on ne peut pas le remettre
              if ($rootScope.cartList[i] == $scope.products[$scope.id]) {
@@ -83,18 +91,13 @@ starShipApp.controller('homeController', function(){
              }
            }
            if (test) {
-             // console.log($scope.element[$scope.id]);
              $rootScope.cartList.push($scope.products[$scope.id]);
-             console.log('Panier après ajout :');
-             console.log($rootScope.cartList);
-             console.log('Prix article :');
-             console.log($scope.products[$scope.id].prix);
+             // Calculons le total
              total += $scope.products[$scope.id].prix;
-             console.log('Total panier :');
-             console.log(total);
              $routeScope.total = total;
            }
          };
+         // Fonction pop-up "ajouté au panier"
          $('.popupAjout').hide();
          $('.addToCart').click(function showAlert() {
          $('.popupAjout').show().delay(1000).fadeOut(1000);

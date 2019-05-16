@@ -6,7 +6,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <!-- Logo / titre du site -->
-    <a class="navbar-brand text-white d-flex font-weight-bold" href="#">Star Ship</a>
+    <a class="navbar-brand text-white d-flex font-weight-bold" href="#">Star-Ship.fr</a>
       <!-- Catégories en dropdown -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -54,7 +54,7 @@
   <!-- produits -->
   <div class="row d-flex flex-row justify-content-center"ng-controller="ProductsCtrl">
     <div class="card m-4 shadow" style="width: 18rem;" ng-repeat="product in products | filter:query | orderBy:order">
-      <a href="#!/details/{{$index}}">
+      <a href="#!/details/{{product.id}}">
         <img src="assets/img/{{product.img}}" class="card-img-sm rounded" alt="">
       <div class="card-img-overlay">
         <h5 class="card-title text-white font-weight-bold">{{product.nom}}</h5>

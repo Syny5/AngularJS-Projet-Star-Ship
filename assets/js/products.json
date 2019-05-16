@@ -39,7 +39,7 @@
        "reference": "sc001",
        "type": "Vaisseau Mère",
        "nom": "Javelin",
-       "description": "Un bon gros vaisseau mère des familles de la marque star citizen.",
+       "description": "Le vaisseau mère de référence de la célèbre marque Star Citizen.",
        "prix": 999.99,
        "quantity": 1
    },
@@ -61,7 +61,7 @@
        "reference": "sc002",
        "type": "Vaisseau Cargo",
        "nom": "Hull-e",
-       "description": "Vaisseau pouvant transporter jusqu'à 100 000 tonnes de bon gros chichons (pour Flavien.Corp).",
+       "description": "Vaisseau pouvant transporter jusqu'à 100 000 tonnes de bon gros oursons en chamallow.",
        "prix": 150.98,
        "quantity": 1
    },
@@ -94,7 +94,7 @@
        "reference": "sw005",
        "type": "Vaisseau de combat",
        "nom": "Tie-Fighter",
-       "description": "Le un petit peu moins célèbre mais quand même bien célèbre vaisseau de combat de star wars.",
+       "description": "Le vaisseau de référence des soldats de l'Empire.",
        "prix": 200.00,
        "quantity": 1
    },
@@ -116,7 +116,7 @@
        "reference": "sw006",
        "type": "Vaisseau de combat",
        "nom": "Chasseur Naboo",
-       "description": "C'est le vaisseau chelou que prend anakin pour s'enfuir oklm de la planète Naboo alors qu'il a 7 ans .",
+       "description": "C'est le vaisseau ultra-performant que prend anakin pour s'enfuir de la planète Naboo alors qu'il a 7 ans .",
        "prix": 100.00,
        "quantity": 1
    },
@@ -149,7 +149,7 @@
        "reference": "t001",
        "type": "Vaisseau de tourisme",
        "nom": "Tesla Roadster",
-       "description": "La tesla d'Elon Musk qu'il a envoyé dans l'espace et franchement ça marche bien.",
+       "description": "La tesla d'Elon Musk qu'il a envoyé dans l'espace, à récupérer dans l'espace.",
        "prix": 300.00,
        "quantity": 1
    }
