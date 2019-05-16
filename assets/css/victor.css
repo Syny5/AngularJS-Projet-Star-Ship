@@ -117,3 +117,10 @@ h1{
   color: white;
   font-weight: bold;
 }
+
+/* Responsive vidéos */
+@media all and (max-width : 686px){
+  .img-fluid{
+    height: 200px;
+}
+}

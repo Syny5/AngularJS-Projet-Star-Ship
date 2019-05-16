@@ -14,6 +14,7 @@ starShipApp.run(function($rootScope, $http){
 });
 starShipApp.config(function($routeProvider){
   $routeProvider
+  // Déclaration de toutes les routes / views avec leur controller attitré
   .when('/home',{
     controller: 'homeController',
     templateUrl: 'partials/home.html'
@@ -29,10 +30,6 @@ starShipApp.config(function($routeProvider){
   .when('/details/:id?',{
     controller: 'detailsController',
     templateUrl: 'partials/details.html'
-  })
-  .when('/categories',{
-    controller: 'categoriesController',
-    templateUrl: 'partials/categores.html'
   })
   .otherwise({
     redirectTo: '/home'
@@ -108,7 +105,4 @@ starShipApp.controller('homeController', function(){
              $routeScope.total = total;
            }
          };
-})
-.controller('categoriesController', function(){
-
 })
