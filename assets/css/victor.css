@@ -103,12 +103,14 @@ h1{
 /* bouton acheter maintenant */
 #toBuyNow{
   background-color: blue;
+  margin-top: 20px;
 }
 
 /* bouton acheter maintenant + autres (?)*/
 .btnIntoCart{
   width : 200px;
   font-weight: bold;
+  color: white;
 }
 
 /* Bouton supprimer article */

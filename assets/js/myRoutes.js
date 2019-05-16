@@ -47,20 +47,6 @@ starShipApp.controller('homeController', function(){
        });
 })
 .controller('cartController', function($scope){
-    // Fonction qui se déclenche quand on clique sur le bouton "+"
-    $scope.quantityPlus = function (cartList) {
-        // On augmente la quantité de 1
-        cartList.quantity++;
-    };
-
-    // Fonction qui se déclanche quand on clique sur le bouton "-"
-    $scope.quantityMinus = function (cartList) {
-        // Si la quantité est supérieure à 0
-        if (cartList.quantity > 0) {
-            // On peut réduire la quantité de 1
-            cartList.quantity--;
-        }
-    };
   // Fonction qui supprime l'item du panier au clic sur le bouton Supprimer
       $scope.remove = function ($index) {
           // On supprime un item du tableau en donnant son $index en paramètre
@@ -105,4 +91,8 @@ starShipApp.controller('homeController', function(){
              $routeScope.total = total;
            }
          };
+         $('.popupAjout').hide();
+         $('.addToCart').click(function showAlert() {
+         $('.popupAjout').show().delay(1000).fadeOut(1000);
+        })
 })

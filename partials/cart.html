@@ -28,20 +28,20 @@
   </nav>
   <!-- Titre du panier -->
   <h1>Votre panier</h1>
-  <div ng-repeat="product in cartList" class="allProductsInCartList">
-    <div class="col-md-4">
-        <img ng-src="assets/img/{{cartItem.img}}">
-        <p class="productClassStyle" id="nameProductClassStyle">Nom : {{product.nom}}</p>
-        <p class="productClassStyle">Prix : {{product.prix | currency: '€'}}</p>
-        <p class="productClassStyle">Quantité : {{product.quantity}}</p>
-        <button type="button" name="remove" class="btn item_remove_button" ng-click="remove($index)">Supprimer</button>
+  <div class="row d-flex flex-row justify-content-center allProductsInCartList">
+    <div ng-repeat="product in cartList">
+      <div class="row-md-2 m-2 articleCart border-rounded">
+          <img ng-src="assets/img/{{product.img}}" class="imgCart rounded">
+          <p class="productClassStyle mt-2" id="nameProductClassStyle">Nom : {{product.nom}}</p>
+          <p class="productClassStyle">Prix : {{product.prix | currency: '€'}}</p>
+          <p class="productClassStyle">Quantité : {{product.quantity}}</p>
+          <button type="button" name="remove" class="btn item_remove_button m-2" ng-click="remove($index)">Supprimer</button>
+      </div>
     </div>
-  </div>
-  <hr></hr>
   </div>
   <!-- Bouton Acheter Maintenant -->
   <div class="d-flex justify-content-center">
-    <button type="button" class="btn btn-dark btnIntoCart" id="toBuyNow">Acheter maintenant</button>
+    <button type="button" class="btn btnIntoCart" id="toBuyNow">Acheter maintenant</button>
   </div>
   <div class="d-flex justify-content-center">
     <a href="#!"><button type="button" class="btn returnBtn">Continuer mes achats</button></a>

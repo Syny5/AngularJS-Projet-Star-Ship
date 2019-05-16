@@ -1,11 +1,16 @@
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  center top / cover fixed url("../img/bg.jpg");
+  center top / cover fixed url("../img/blue.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   font-family: 'Titillium Web', sans-serif;
+}
+
+.navbar, .footercontact {
+  border-radius: 5px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 .card-title, .categories-title {
@@ -19,7 +24,7 @@ body {
   transform: scale(1.1);
 }
 
-.article {
+.article, .articleCart {
   background: rgba(52, 58, 64, 0.8);
   border-radius: 5px;
 }
