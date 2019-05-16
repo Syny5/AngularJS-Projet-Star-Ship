@@ -28,18 +28,19 @@
   </nav>
   <!-- Titre du panier -->
   <h1>Votre panier</h1>
-  <div ng-repeat="product in cartList">
+  <div ng-repeat="product in cartList" class="allProductsInCartList">
     <div class="col-md-4">
-        <img src="../assets/img/{{product.img}}">
+        <img ng-src="assets/img/{{cartItem.img}}">
         <p class="productClassStyle" id="nameProductClassStyle">Nom : {{product.nom}}</p>
         <p class="productClassStyle">Prix : {{product.prix | currency: '€'}}</p>
         <p class="productClassStyle">Quantité : {{product.quantity}}</p>
+        <button type="button" name="remove" class="btn item_remove_button" ng-click="remove($index)">Supprimer</button>
     </div>
   </div>
   <hr></hr>
   </div>
   <!-- Bouton Acheter Maintenant -->
   <div class="d-flex justify-content-center">
-    <button type="button" class="btn btn-dark toBuy">Acheter maintenant</button>
+    <button type="button" class="btn btn-dark btnIntoCart" id="toBuyNow">Acheter maintenant</button>
   </div>
 </div>
